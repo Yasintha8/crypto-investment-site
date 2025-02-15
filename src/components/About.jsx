@@ -10,8 +10,8 @@ const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="bg-gradient-to-b from-[#1F2A36] to-[#2D3C50] py-16 px-8 text-center mt-20 rounded-2xl text-white" 
-        id="about"
-      >
+        id="about">
+            
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-extrabold mb-6 text-[#FFB200] flex items-center justify-center space-x-2">
             <span>About Investmint Crypto</span>
