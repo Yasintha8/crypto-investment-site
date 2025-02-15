@@ -30,8 +30,8 @@ const HeroSection = () => {
           >
             Investment Plans
           </a>
-          <a href="#" className="py-3 px-4 rounded-md border hover:border-orange-900">
-            Explore more
+          <a href="#about" className="py-3 px-4 rounded-md border hover:border-orange-900">
+            About us
           </a>
         </div>
       </motion.div>

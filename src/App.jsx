@@ -1,10 +1,12 @@
-import FeatureSection from "./components/FeatureSection"
-import Footer from "./components/Footer"
-import HeroSection from "./components/HeroSection"
-import InvestmentPlans from "./components/InvestmentPlans"
-import Navbar from "./components/Navbar"
-import Testimonials from "./components/Testimonials"
-import WorkFlow from "./components/WorkFlow"
+import About from "./components/About";
+import FeatureSection from "./components/FeatureSection";
+import Footer from "./components/Footer";
+import HeroSection from "./components/HeroSection";
+import InvestmentPlans from "./components/InvestmentPlans";
+import Navbar from "./components/Navbar";
+import Testimonials from "./components/Testimonials";
+import WorkFlow from "./components/WorkFlow";
+ // Import the SignInModal
 
 const App = () => {
   return (
@@ -15,11 +17,12 @@ const App = () => {
         <FeatureSection />
         <WorkFlow />
         <InvestmentPlans />
-        <Testimonials/>
-        <Footer/>
+        <Testimonials />
+        <About />
+        <Footer />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
