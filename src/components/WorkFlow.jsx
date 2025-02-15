@@ -1,18 +1,31 @@
 import { CheckCircle2 } from "lucide-react";
 import codeImg from "../assets/code.jpg";
 import { checklistItems } from "../constants";
+import { motion } from "framer-motion";
 
 const WorkFlow = () => {
   return (
     <div className="mt-20 " id="workflow">
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center tracking-wide">
-        How It {" "}<span className="bg-gradient-to-r from-[#FFB200] to-orange-800 text-transparent bg-clip-text">Works</span></h2>
+        <motion.h2 
+        initial={{opacity:0, x:-200}}
+        transition={{duration:1.5}}
+        whileInView={{opacity:1, x:0}}
+        viewport={{once:true}}
+    
+        className="text-3xl sm:text-5xl lg:text-6xl text-center tracking-wide">
+        How It {" "}<span className="bg-gradient-to-r from-[#FFB200] to-orange-800 text-transparent bg-clip-text">Works</span></motion.h2>
     
     <div className="flex flex-wrap justify-center">
         <div className="p-2 w-full lg:w-1/2">
             <img src={codeImg} className="rounded-lg opacity-60 " alt="code" />
         </div>
-        <div className="pt-2 w-full lg:w-1/2">
+        <motion.div 
+         initial={{opacity:0, x:200}}
+         transition={{duration:2.5}}
+         whileInView={{opacity:1, x:0}}
+         viewport={{once:true}}
+        
+        className="pt-2 w-full lg:w-1/2">
             {checklistItems.map((item, index)=>(
                 <div key={index} className="flex mb-12">
                     <div className="text-green-400 mx-6 bg-neutral-900 h-10 w-10 p-2 justify-center
@@ -25,7 +38,7 @@ const WorkFlow = () => {
                     </div>
                 </div>
             ))}
-        </div>
+        </motion.div>
     </div>
     
     

@@ -1,10 +1,18 @@
 import video1 from "../assets/video1.mp4";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center mt-6 lg:mt-10 px-6 lg:px-20" id="Header">
       {/* Left Column - Text Content */}
-      <div className="lg:w-1/2 text-center lg:text-left">
+      <motion.div 
+      initial={{opacity:0, y:100}}
+      transition={{duration:2.0}}
+      whileInView={{opacity:1, y:0}}
+      viewport={{once:true}}
+      
+      
+      className="lg:w-1/2 text-center lg:text-left">
         <h1 className="text-4xl sm:text-6xl lg:text-7xl leading-tight tracking-wide">
           Your Future
           <span className="bg-gradient-to-r from-[#FFB200] to-orange-700 font-bold text-transparent bg-clip-text">
@@ -26,7 +34,7 @@ const HeroSection = () => {
             Explore more
           </a>
         </div>
-      </div>
+      </motion.div>
 
       {/* Right Column - Video */}
       <div className="w-full ml-10 flex justify-center lg:justify-end">

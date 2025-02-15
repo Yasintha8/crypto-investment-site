@@ -1,15 +1,28 @@
 import { testimonials } from "../constants"
 import star_icon2 from "../assets/star_icon2.svg";
+import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
     <div className="mt-20 tracking-wide" id="testimonials">
-        <h2 className="text-xl cm:text-5xl lg:text-6xl text-center my-10 lg:my-20">
-            What people are saying</h2> 
+        <motion.h2 
+        initial={{opacity:0, x:200}}
+        transition={{duration:1.5}}
+        whileInView={{opacity:1, x:0}}
+        viewport={{once:true}}
+        
+        className="text-xl cm:text-5xl lg:text-6xl text-center my-10 lg:my-20">
+            What people are saying</motion.h2> 
         <div className="flex flex-wrap justify-center">
             {testimonials.map((testimonial, index)=>(
                 <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
-                    <div className="bg-neutral rounded-md p-6 text-md border 
+                    <motion.div 
+                    initial={{opacity:0, x:-200}}
+                    transition={{duration:3.5}}
+                    whileInView={{opacity:1, x:0}}
+                    viewport={{once:true}}
+                    
+                    className="bg-neutral rounded-md p-6 text-md border 
                     border-neutral-800 font-thin">
                         <p>{testimonial.text}</p>
                     <div className='flex gap-1 mt-4 text-yellow-500 mb-4'>
@@ -26,7 +39,7 @@ const Testimonials = () => {
                                 {testimonial.company}</span>
                         </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             ))}
         </div>
