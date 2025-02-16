@@ -36,6 +36,6 @@ This project is licensed under the MIT License.
 Contributions are welcome! Feel free to fork the repo, submit a pull request, or report issues.
 
 ## 🌐 Live Demo
-
+https://investmint-crypto.vercel.app/
 
 
