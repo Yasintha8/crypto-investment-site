@@ -7,8 +7,6 @@ InvestMint is a modern and responsive **<b>React + Tailwind CSS</b>** frontend f
 - 📊 **Investment Plans UI** – Displays various crypto investment plans.
 - 🔥 **Fully Responsive** – Optimized for mobile, tablet, and desktop.
 - 🎨 **Modern UI/UX** – Sleek and user-friendly interface.
-- 🌙 **Dark/Light Mode** – Toggle between themes for a better experience.
-- ⚡ **Optimized Performance** – Fast, smooth, and SEO-friendly.
 
 ## 🛠️ Tech Stack
 
